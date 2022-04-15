@@ -38,9 +38,7 @@ export default function Navbar() {
         <nav>
             <ul
                 style={{
-                    paddingLeft: 0,
-                    listStyle: "none",
-                    display: "flex",
+
                 }}
             >
                 {listItems.map((listItem) => (
