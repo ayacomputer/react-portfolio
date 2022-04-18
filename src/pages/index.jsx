@@ -6,8 +6,6 @@ export default function Index() {
 
         <FlexContainer>
 
-
-
         </FlexContainer>
 
     );

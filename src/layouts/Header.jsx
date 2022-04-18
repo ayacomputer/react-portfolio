@@ -16,8 +16,8 @@ export default function Header() {
             link: "/about",
         },
         {
-            title: "Project",
-            link: "/project",
+            title: "Projects",
+            link: "/projects",
         },
         {
             title: "Contact",
