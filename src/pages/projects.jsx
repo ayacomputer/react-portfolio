@@ -6,8 +6,8 @@ import Card from "@mui/material/Card";
 import { CardActionArea, CardActions, CardContent, CardMedia } from '@mui/material';
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ComputerIcon from '@mui/icons-material/Computer';
+import { GitHub, Computer } from '@mui/icons-material';
+
 
 const styles = {
     mainContainer: {
@@ -52,8 +52,8 @@ export default function Projects() {
                             </CardActionArea>
                             <CardActions>
 
-                                <Button variant="outlined" color="primary" startIcon={<GitHubIcon />} href={project.gitHub}>Github</Button>
-                                {project.deployed && <Button variant="outlined" color="primary" startIcon={<ComputerIcon />} href={project.deployed}>Deployed App</Button>}
+                                <Button variant="outlined" color="primary" startIcon={<GitHub />} href={project.gitHub}>Github</Button>
+                                {project.deployed && <Button variant="outlined" color="primary" startIcon={<Computer />} href={project.deployed}>Deployed App</Button>}
 
 
                             </CardActions>

@@ -32,15 +32,29 @@ export default function Header() {
 
     ];
 
+    const fontFamily = [
+        'Nunito',
+        'Comforter',
+        'Roboto'
+    ].join(',');
+
+    const styles = {
+        header: {
+            textAlign: "center",
+            fontFamily: fontFamily
+
+        }
+    }
+
 
 
     return (
-        <header>
+        <header style={styles.header}>
             <AppBar id="navBar" position="static">
                 <Container>
                     <Toolbar disableGutters>
-                        {listItems.map((listItem) => (
-                            <Button >
+                        {listItems.map((listItem, i) => (
+                            <Button key={i}>
                                 <Link to={listItem.link}>{listItem.title}</Link>
                             </Button>
                         ))}
@@ -57,6 +71,6 @@ export default function Header() {
 
             <hr></hr>
             <p>Welcome to my portfolio!</p>
-        </header>
+        </header >
     );
 }

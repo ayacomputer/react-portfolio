@@ -1,5 +1,5 @@
 import MainLayout from './layouts/MainLayout';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Index from './pages';
