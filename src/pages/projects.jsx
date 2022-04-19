@@ -3,18 +3,11 @@ import projects from '../components/projects';
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import { CardActionArea, CardActions, CardContent, CardMedia } from '@mui/material';
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ComputerIcon from '@mui/icons-material/Computer';
-
-
-
-
 
 const styles = {
     mainContainer: {
@@ -22,12 +15,15 @@ const styles = {
         height: "100%"
     },
     cardContainer: {
-        maxWidth: 345,
+        maxWidth: "80%",
         margin: "3rem auto",
     },
+    img: {
+        background: "rgb(32, 33, 36)",
+        maxWidth: "100%",
+        objectFit: "cover top"
+    }
 };
-
-
 
 export default function Projects() {
     return (
@@ -40,9 +36,9 @@ export default function Projects() {
                                 <CardMedia
                                     component="img"
                                     alt="project"
-                                    height="500"
+                                    height="300vh"
                                     image={project.image}
-                                    objectFit="contain"
+                                    style={styles.img}
 
                                 />
                                 <CardContent>

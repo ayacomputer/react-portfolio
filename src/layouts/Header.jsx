@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import { Container, Button, Toolbar } from '@mui/material';
 
 
 
@@ -34,17 +36,21 @@ export default function Header() {
 
     return (
         <header>
-            <nav id="navBar">
-                <ul
-                    style={{
-                    }}>
-                    {listItems.map((listItem) => (
-                        <li className="navButton">
-                            <Link to={listItem.link}>{listItem.title}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            <AppBar id="navBar" position="static">
+                <Container>
+                    <Toolbar disableGutters>
+                        {listItems.map((listItem) => (
+                            <Button >
+                                <Link to={listItem.link}>{listItem.title}</Link>
+                            </Button>
+                        ))}
+
+
+                    </Toolbar>
+
+                </Container>
+
+            </AppBar>
             <h1>Ayako Woollan</h1>
             <h2>Full Stack Developer</h2>
 
