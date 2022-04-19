@@ -32,8 +32,6 @@ export default function Header() {
 
 
 
-
-
     return (
         <header>
             <nav id="navBar">
