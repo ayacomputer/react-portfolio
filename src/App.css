@@ -1,5 +1,76 @@
 @import-normalize;
 
+:root {
+  --darkColor: rgb(32, 33, 36);
+  --lightColor: wheat;
+  --primeColor: rgba(150, 202, 27, 0.911);
+  --secondColor:  rgba(223, 100, 78, 0.911);
+  --secondColor:  rgba(207, 126, 120, 0.911);
+  --primeBorder: dashed 2px var(--lightColor);
+  --secondBorder: solid 1px var(--lightColor);
+  --borderRadius: 1rem;
+ }
+ 
+ ::selection {
+     background-color: rgb(221, 53, 53);
+     color: var(--darkColor);
+   }
+ 
+ :target {padding-top: 8rem;}
+ 
+ html {
+     font-size: 62.5%;
+     box-sizing: border-box;
+     transition: all 0.5s ease-in-out;
+ }
+ 
+ body {
+     box-sizing: border-box;
+     font-size: 3rem;
+     line-height: 1.5;
+     font-family:'Nunito','Outfit', sans-serif;
+     background-color: var(--darkColor);
+     text-align: center;
+     color: var(--lightColor);
+ }
+ 
+ 
+ h1 {
+     font-size: 4.5rem;
+     text-transform:uppercase;
+     color: var(--lightColor);
+     padding: 5rem 3rem 2rem 3rem;
+ 
+ }
+ 
+ h2 {
+     font-size: 4rem;
+     color: var(--primeColor);
+     font-family: 'Comforter', cursive, sans-serif;
+ }
+ 
+ hr {
+  border: var(--secondBorder);
+  width: 80%;
+ }
+ 
+ h3 {
+     display: block;
+     font-size: 3rem;
+     color: var(--primeColor);
+ 
+ }
+ 
+ header {
+     width: 100%;
+     margin: 0 auto;
+ }
+ 
+ main {
+      margin: 5rem; 
+ }
+ 
+
 .App {
   text-align: center;
 }

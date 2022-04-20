@@ -1,17 +1,19 @@
 import React from 'react'
-import Footer from './Footer'
+import NavBar from './NavBar'
 import Header from './Header'
+import Footer from './Footer'
+import '../App.css'
+
+
 
 export default function MainLayout(props) {
   return (
     <main>
 
-      {/* nav */}
-      <Header></Header>
+
+      <NavBar></NavBar>
 
       {props.children}
-
-      {/* footer */}
       <Footer></Footer>
 
     </main>

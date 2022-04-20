@@ -1,6 +1,6 @@
 import MainLayout from './layouts/MainLayout';
 // import logo from './logo.svg';
-
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Index from './pages';
 import About from './pages/about';
