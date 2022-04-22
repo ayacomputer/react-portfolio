@@ -28,7 +28,7 @@ export default function NavBar() {
         },
         {
             title: "Resume",
-            link: resume,
+            link: `${resume}/target="_blank"`,
         },
 
     ];

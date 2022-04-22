@@ -7,7 +7,7 @@ import { CardActionArea, CardActions, CardContent, CardMedia } from '@mui/materi
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { GitHub, Computer } from '@mui/icons-material';
-import Header from '../layouts/Header';
+import NavBar from '../layouts/NavBar';
 
 
 const styles = {
@@ -29,7 +29,9 @@ const styles = {
 export default function Projects() {
     return (
         <>
+            <NavBar />
             <Box component="div" style={styles.mainContainer}>
+                <h3>PROJECTS</h3>
                 <Grid container justify="center">
                     {projects.map((project, i) => (
                         <Grid item xs={12} sm={6} md={4} key={i} >

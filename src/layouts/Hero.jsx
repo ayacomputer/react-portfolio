@@ -1,6 +1,9 @@
 import React from 'react'
+import { IconButton } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-export default function Header() {
+
+export default function Hero() {
 
     const fontFamily = [
         'Nunito',
@@ -26,6 +29,7 @@ export default function Header() {
 
             <hr></hr>
             <p>Welcome to my portfolio!</p>
+            <Link to="/about"><IconButton>Explore More</IconButton></Link>
         </header >
     );
 }

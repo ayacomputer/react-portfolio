@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
+import NavBar from '../layouts/NavBar';
 import { Container, Typography, Grid, Link, Box } from '@mui/material'
 import Ayako from '../../src/images/logo.png'
 
@@ -28,6 +29,7 @@ export default function About() {
   ];
   return (
     <>
+      <NavBar />
       <Container>
         <h3>ABOUT</h3>
         <Grid container rowSpacing={3}>
