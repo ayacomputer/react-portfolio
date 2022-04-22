@@ -39,14 +39,14 @@ export default function Footer() {
   return (
     <Container style={styles.container}>
       {links.map((link, i) => (
-        <IconButton key={i} color="secondary" href={link.href} size="medium">
+        <IconButton key={i} color="secondary" href={link.href} size="medium" target="_blank">
           {link.icon()}
         </IconButton>
       ))}
       <div style={styles.footer}>
         <p>Updated April 2022</p>
         2022 © <br />
-        Powered by <a href="https://github.com/ayacomputer" style={{ textDecoration: "none" }}>Ayako Woollan</a>
+        Powered by <a href="https://github.com/ayacomputer" style={{ textDecoration: "none" }} target="_blank">Ayako Woollan</a>
       </div>
     </Container>
   )

@@ -52,7 +52,7 @@ export default function NavBar() {
 
     return (
 
-        <AppBar id="navBar" position="static" style={styles.navBar}>
+        <AppBar position="static" style={styles.navBar} sx={{ position: "sticky", top: "0", zIndex: "100" }}>
             <Container>
                 <Toolbar disableGutters>
                     {listItems.map((listItem, i) => (

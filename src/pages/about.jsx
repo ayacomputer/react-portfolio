@@ -52,7 +52,7 @@ export default function About() {
           <h3>Skills</h3>
           <Grid container rowSpacing={3} justifyContent="center">
             {skills.map((skill, i) => (
-              <Link href={skill.href} underline="none"><Box item md={1} key={i} style={{ fontSize: "2rem", color: "wheat", backgroundColor: "inherit", padding: "0.5rem" }}><Icon icon={skill.icon} />
+              <Link to={skill.href} underline="none" target="_blank"><Box item md={1} key={i} style={{ fontSize: "2rem", color: "wheat", backgroundColor: "inherit", padding: "0.5rem" }}><Icon icon={skill.icon} />
                 <Typography>{skill.skill}</Typography></Box></Link>
             ))}
           </Grid>

@@ -34,7 +34,7 @@ export default function Projects() {
                     {projects.map((project, i) => (
                         <Grid item xs={12} sm={6} md={4} key={i} >
                             <Card style={styles.cardContainer}>
-                                <CardActionArea href={project.gitHub}>
+                                <CardActionArea href={project.gitHub} target="_blank">
                                     <CardMedia
                                         component="img"
                                         alt="project"
@@ -54,8 +54,8 @@ export default function Projects() {
                                 </CardActionArea>
                                 <CardActions>
 
-                                    <Button variant="outlined" color="primary" startIcon={<GitHub />} href={project.gitHub}>Github</Button>
-                                    {project.deployed && <Button variant="outlined" color="primary" startIcon={<Computer />} href={project.deployed}>Deployed App</Button>}
+                                    <Button variant="outlined" color="primary" startIcon={<GitHub />} href={project.gitHub} target="_blank" >Github</Button>
+                                    {project.deployed && <Button variant="outlined" color="primary" startIcon={<Computer />} href={project.deployed} target="_blank">Deployed App</Button>}
 
 
                                 </CardActions>
