@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import { Container, Button, Toolbar } from '@mui/material';
-import resume from '../resume/ayakowoollan.pdf'
 
 
 
@@ -28,7 +27,8 @@ export default function NavBar() {
         },
         {
             title: "Resume",
-            link: `${resume}/target="_blank"`,
+            href: `https://drive.google.com/file/d/1LuqlAfQ7WVJrnhbRjGEO84fQdFdKrDgl/view?usp=sharing`,
+            target: "_blank"
         },
 
     ];
@@ -57,7 +57,12 @@ export default function NavBar() {
                 <Toolbar disableGutters>
                     {listItems.map((listItem, i) => (
                         <Button key={i}>
-                            <Link to={listItem.link}>{listItem.title}</Link>
+                            {listItem.href && (
+                                <a href={listItem.href} target={listItem.target}>{listItem.title}</a>
+                            )}
+                            {!listItem.href && (
+                                <Link to={listItem.link}>{listItem.title}</Link>
+                            )}
                         </Button>
                     ))}
 

@@ -10,8 +10,18 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function Footer() {
   const styles = {
+    icon: {
+      color: "wheat",
+      fontSize: "2rem"
+    },
     container: {
+      marginTop: "20vh",
       textAlign: "center",
+    },
+    link: {
+      underline: "none",
+      textDecoration: "none",
+      color: "wheat",
     },
     footer: {
       fontSize: "0.75rem",
@@ -39,15 +49,16 @@ export default function Footer() {
   return (
     <Container style={styles.container}>
       {links.map((link, i) => (
-        <IconButton key={i} color="secondary" href={link.href} size="medium" target="_blank">
+        <IconButton key={i} color="secondary" href={link.href} size="medium" target="_blank" style={styles.icon}>
           {link.icon()}
         </IconButton>
-      ))}
+      ))
+      }
       <div style={styles.footer}>
         <p>Updated April 2022</p>
         2022 © <br />
-        Powered by <a href="https://github.com/ayacomputer" style={{ textDecoration: "none" }} target="_blank">Ayako Woollan</a>
+        Powered by <a href="https://github.com/ayacomputer" target="_blank" style={styles.link}>Ayako Woollan</a>
       </div>
-    </Container>
+    </Container >
   )
 }

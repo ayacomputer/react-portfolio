@@ -1,6 +1,7 @@
 import React from 'react'
-import { IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 
 export default function Hero() {
@@ -13,9 +14,15 @@ export default function Hero() {
 
     const styles = {
         header: {
+            marginTop: "20vh",
             textAlign: "center",
             fontFamily: fontFamily
 
+        },
+        button: {
+            backgroundColor: "rgba(223, 100, 78, 0.911)",
+            textColor: "rgb(32, 33, 36)",
+            textDecoration: "none",
         }
     }
 
@@ -29,7 +36,7 @@ export default function Hero() {
 
             <hr></hr>
             <p>Welcome to my portfolio!</p>
-            <Link to="/about"><IconButton>Explore More</IconButton></Link>
+            <Link to="/about" underline="none"><Button variant="contained" size="large" endIcon={<ArrowCircleRightIcon />} style={styles.button}>Explore More</Button></Link>
         </header >
     );
 }
