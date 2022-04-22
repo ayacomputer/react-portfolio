@@ -42,7 +42,8 @@ export default function NavBar() {
     const styles = {
         navBar: {
             textAlign: "center",
-            fontFamily: fontFamily
+            fontFamily: fontFamily,
+            backgroundColor: "inherit",
 
         }
     }

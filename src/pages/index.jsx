@@ -1,5 +1,5 @@
 import React from "react";
-import FlexContainer from "../components/flex/FlexContainer";
+import Header from "../layouts/Header";
 
 
 
@@ -7,9 +7,7 @@ import FlexContainer from "../components/flex/FlexContainer";
 export default function Index() {
     return (
 
-        <FlexContainer>
-
-        </FlexContainer>
+        <Header />
 
     );
 }

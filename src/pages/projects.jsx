@@ -29,7 +29,6 @@ const styles = {
 export default function Projects() {
     return (
         <>
-            <Header />
             <Box component="div" style={styles.mainContainer}>
                 <Grid container justify="center">
                     {projects.map((project, i) => (
