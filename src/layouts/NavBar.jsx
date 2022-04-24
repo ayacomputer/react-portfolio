@@ -9,7 +9,7 @@ export default function NavBar() {
 
     const listItems = [
         {
-            title: "AYAKO WOOLLAN",
+            title: "Home",
             link: "/",
         },
         {
@@ -45,6 +45,7 @@ export default function NavBar() {
             backgroundColor: "inherit",
         },
         button: {
+            color: "inherit",
             fontSize: "2rem",
             fontWeight: "Bold",
             fontFamily: fontFamily,
@@ -61,7 +62,7 @@ export default function NavBar() {
                     {listItems.map((listItem, i) => (
                         <Button key={i} style={styles.button} spacing={1}>
                             {listItem.href && (
-                                <Link href={listItem.href} target={listItem.target} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
+                                <Link to={listItem.href} target={listItem.target} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
                             )} {!listItem.href && (
                                 <Link to={listItem.link} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
                             )}

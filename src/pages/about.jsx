@@ -30,15 +30,16 @@ export default function About() {
   return (
     <>
       <NavBar />
+      <h3>TEST</h3>
       <Container>
         <h3>ABOUT</h3>
         <Grid container direction="row" rowSpacing={1}>
           <Grid item xs={4}>
-            <img src={Ayako} alt="A photo of me" style={{ height: "50vh" }} />
+            <img src={Ayako} alt="me" style={{ height: "50vh" }} />
           </Grid>
           <Grid item container xs={8} style={{ padding: "5rem", placeItems: "center" }}>
             <Grid item style={{ fontSize: "1.75rem", textAlign: "left" }}>
-              Hi!After spending over 6 years in the education industry in Australia and
+              Hi! After spending over 6 years in the education industry in Australia and
               Japan, I
               discovered a passion for web development and decided to study through a bootcamp and
               self-study. I love working with other developers to find the
@@ -54,8 +55,11 @@ export default function About() {
           <h3>Skills</h3>
           <Grid container rowSpacing={3} justifyContent="center">
             {skills.map((skill, i) => (
-              <Link to={skill.href} underline="none" target="_blank"><Box item md={1} key={i} style={{ fontSize: "2rem", color: "wheat", backgroundColor: "inherit", padding: "0.5rem" }}><Icon icon={skill.icon} />
-                <Typography>{skill.skill}</Typography></Box></Link>
+              <Link key={i} to={skill.href} underline="none" target="_blank">
+                <Box item key={i} md={1} style={{ fontSize: "2rem", color: "wheat", backgroundColor: "inherit", padding: "0.5rem" }}>
+                  <Icon icon={skill.icon} />
+                  <Typography>{skill.skill}</Typography></Box>
+              </Link>
             ))}
           </Grid>
 
