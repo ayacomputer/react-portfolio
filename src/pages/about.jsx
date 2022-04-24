@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react';
 import NavBar from '../layouts/NavBar';
 import { Container, Typography, Grid, Link, Box } from '@mui/material'
 import Ayako from '../../src/images/logo.png'
+import { Typewriter } from 'react-simple-typewriter'
 
 export default function About() {
 
@@ -38,7 +39,17 @@ export default function About() {
           </Grid>
           <Grid item container xs={12} sm={10} md={9} style={{ padding: "5rem", placeItems: "center" }}>
             <Grid item style={{ fontSize: "1.75rem", textAlign: "left" }}>
-              Hi! After spending over 6 years in the education industry in Australia and
+              <p style={{ fontFamily: "Courier", fontWeight: "bold" }}>
+                <Typewriter
+                  words={['Hi! My name is Ayako.']}
+                  loop={1}
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={70}
+                  delaySpeed={1000}
+                />
+              </p>
+              After spending over 6 years in the education industry in Australia and
               Japan, I
               discovered a passion for web development and decided to study through a bootcamp and
               self-study. I love working with other developers to find the
