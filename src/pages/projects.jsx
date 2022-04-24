@@ -8,7 +8,13 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { GitHub, Computer } from '@mui/icons-material';
 import NavBar from '../layouts/NavBar';
+import { fontWeight } from '@mui/system';
 
+const fontFamily = [
+    'Nunito',
+    'Comforter',
+    'Roboto'
+].join(',');
 
 const styles = {
     mainContainer: {
@@ -18,6 +24,18 @@ const styles = {
     cardContainer: {
         maxWidth: "80%",
         margin: "3rem auto",
+        background: "inherit",
+    },
+    wheat: {
+        color: "wheat",
+        border: "none",
+        fontWeight: "Bold",
+        fontFamily: fontFamily
+    },
+    green: {
+        color: "rgba(150, 202, 27, 0.911)",
+        fontFamily: fontFamily,
+        fontWeight: "Bold"
     },
     img: {
         background: "rgb(32, 33, 36)",
@@ -35,7 +53,7 @@ export default function Projects() {
                 <Grid container justify="center">
                     {projects.map((project, i) => (
                         <Grid item xs={12} sm={6} md={4} key={i} >
-                            <Card style={styles.cardContainer}>
+                            <Card style={styles.cardContainer} elevation="8">
                                 <CardActionArea href={project.gitHub} target="_blank">
                                     <CardMedia
                                         component="img"
@@ -46,18 +64,18 @@ export default function Projects() {
 
                                     />
                                     <CardContent>
-                                        <Typography variant="h5" gutterBottom>
+                                        <Typography variant="h5" gutterBottom style={styles.green}>
                                             {project.name}
                                         </Typography>
-                                        <Typography variant="body2" color="textSecondary">
+                                        <Typography style={styles.wheat}>
                                             {project.description}
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
 
-                                    <Button variant="outlined" color="primary" startIcon={<GitHub />} href={project.gitHub} target="_blank" >Github</Button>
-                                    {project.deployed && <Button variant="outlined" color="primary" startIcon={<Computer />} href={project.deployed} target="_blank">Deployed App</Button>}
+                                    <Button variant="outlined" style={styles.wheat} startIcon={<GitHub />} href={project.gitHub} target="_blank" >Github</Button>
+                                    {project.deployed && <Button variant="outlined" style={styles.wheat} startIcon={<Computer />} href={project.deployed} target="_blank">Deployed App</Button>}
 
 
                                 </CardActions>
@@ -66,6 +84,7 @@ export default function Projects() {
                     ))}
                 </Grid>
             </Box >
+            <h3>More Projects Coming Soon...</h3>
         </>
     )
 }
