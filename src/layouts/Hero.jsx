@@ -55,7 +55,7 @@ export default function Hero() {
             </p>
 
 
-            <Link to="/about" style={{ textDecoration: "none" }}><Button variant="contained" size="large" endIcon={<ArrowCircleRightIcon />} style={styles.button}>Click Here</Button></Link>
+            <Link to="/React-Portfolio/about" style={{ textDecoration: "none" }}><Button variant="contained" size="large" endIcon={<ArrowCircleRightIcon />} style={styles.button}>Click Here</Button></Link>
 
 
         </header >
