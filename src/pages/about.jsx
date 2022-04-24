@@ -30,7 +30,6 @@ export default function About() {
   return (
     <>
       <NavBar />
-      <h3>TEST</h3>
       <Container>
         <h3>ABOUT</h3>
         <Grid container direction="row" rowSpacing={1}>

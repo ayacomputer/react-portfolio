@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
-import { Container, Button, Toolbar } from '@mui/material';
+import { Container, Button, Toolbar, Typography, Box, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
+
 
 
 
@@ -26,8 +30,7 @@ export default function NavBar() {
         },
         {
             title: "Resume",
-            href: `https://drive.google.com/file/d/1LuqlAfQ7WVJrnhbRjGEO84fQdFdKrDgl/view?usp=sharing`,
-            target: "_blank"
+            link: `https://drive.google.com/file/d/1LuqlAfQ7WVJrnhbRjGEO84fQdFdKrDgl/view?usp=sharing/target=_blank`,
         },
 
     ];
@@ -43,6 +46,12 @@ export default function NavBar() {
             textAlign: "center",
             fontFamily: fontFamily,
             backgroundColor: "inherit",
+            fontSize: "2rem",
+        },
+        logo: {
+            fontFamily: fontFamily,
+            backgroundColor: "inherit",
+            fontSize: "3rem",
         },
         button: {
             color: "inherit",
@@ -52,28 +61,90 @@ export default function NavBar() {
 
         }
     }
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
 
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
+
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
 
     return (
 
-        <AppBar position="static" style={styles.navBar} sx={{ position: "sticky", top: "0", zIndex: "100" }} elevation='0'>
-            <Container>
-                <Toolbar disableGutters>
-                    {listItems.map((listItem, i) => (
-                        <Button key={i} style={styles.button} spacing={1}>
-                            {listItem.href && (
-                                <Link to={listItem.href} target={listItem.target} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
-                            )} {!listItem.href && (
-                                <Link to={listItem.link} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
-                            )}
-                        </Button>
-                    ))}
+        <>
+            <AppBar position="static" style={styles.navBar} elevation='0'>
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="div"
+                            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+                            style={styles.logo}
 
+                        >
+                            AYAKO WOOLLAN
+                        </Typography>
 
-                </Toolbar>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                            <IconButton
+                                onClick={handleOpenNavMenu}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={anchorElNav}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'left',
+                                }}
+                                open={Boolean(anchorElNav)}
+                                onClose={handleCloseNavMenu}
+                                sx={{
+                                    display: { xs: 'block', md: 'none' },
+                                }}
+                            >
+                                {listItems.map((listItem, i) => (
+                                    <MenuItem key={i} onClick={handleCloseNavMenu} style={styles.button}>
+                                        <Typography textAlign="center" style={styles.button} href={listItem.link}>{listItem.title}</Typography>
+                                    </MenuItem>
+                                ))}
+                            </Menu>
+                        </Box>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="div"
+                            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+                            style={styles.button}
+                        >
+                            AYAKO WOOLLAN
+                        </Typography>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} style={styles.button}>
+                            {listItems.map((listItem, i) => (
+                                <Button
+                                    key={i}
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    href={listItem.link}
+                                >
+                                    {listItem.title}
+                                </Button>
+                            ))}
+                        </Box>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </>
 
-            </Container>
-
-        </AppBar>
     )
 }
