@@ -10,6 +10,7 @@ import dayPlanner from "../images/dayPlanner.gif";
 import passwordGenerator from "../images/passwordGenerator.png";
 import jate from "../images/jate.png";
 import snAPI from "../images/socialNetworkAPI.png";
+import portfolio from "../images/portfolio.gif"
 
 const projects = [
     {
@@ -32,6 +33,13 @@ const projects = [
         image: jate,
         gitHub: "https://github.com/ayacomputer/10-PWA-Text-Editor",
         deployed: "https://ayacomputer-pwa-text-editor.herokuapp.com/"
+    },
+    {
+        name: "Basic Portfolio",
+        description: `HTML, CSS`,
+        image: portfolio,
+        gitHub: "https://github.com/ayacomputer/02-Portfolio",
+        deployed: "https://ayacomputer.github.io/02-Portfolio"
     },
     {
         name: "MVC Blog",
@@ -93,6 +101,7 @@ const projects = [
         image: snAPI,
         gitHub: "https://github.com/ayacomputer/18-Social-Network-API",
     },
+
 
 ];
 
