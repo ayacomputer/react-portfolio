@@ -19,18 +19,21 @@ export default function NavBar() {
         {
             title: "About",
             link: "/about",
+
         },
         {
             title: "Projects",
             link: "/projects",
+
         },
         {
             title: "Contact",
             link: "/contact",
+
         },
         {
             title: "Resume",
-            link: `https://drive.google.com/file/d/1LuqlAfQ7WVJrnhbRjGEO84fQdFdKrDgl/view?usp=sharing/target=_blank`,
+            link: 'https://drive.google.com/file/d/1LuqlAfQ7WVJrnhbRjGEO84fQdFdKrDgl/view?usp=sharing',
         },
 
     ];
