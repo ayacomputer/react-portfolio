@@ -79,7 +79,7 @@ export default function NavBar() {
     return (
 
         <>
-            <AppBar position="static" style={styles.navBar} elevation='0'>
+            <AppBar position="static" style={styles.navBar} elevation='0' maxWidth="xl">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Typography

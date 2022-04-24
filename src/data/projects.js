@@ -36,7 +36,7 @@ const projects = [
     },
     {
         name: "Basic Portfolio",
-        description: `HTML, CSS`,
+        description: "HTML, CSS (flexbox)",
         image: portfolio,
         gitHub: "https://github.com/ayacomputer/02-Portfolio",
         deployed: "https://ayacomputer.github.io/02-Portfolio"
