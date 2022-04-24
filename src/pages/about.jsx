@@ -32,11 +32,11 @@ export default function About() {
       <NavBar />
       <Container>
         <h3>ABOUT</h3>
-        <Grid container direction="row" rowSpacing={1}>
-          <Grid item xs={4}>
+        <Grid container direction="row" rowSpacing={{ xs: 1, md: 2 }} style={{ backgroundColor: "rgb(24, 24, 24)", borderRadius: "10px" }}>
+          <Grid item xs={12} sm={2} md={3}>
             <img src={Ayako} alt="me" style={{ height: "50vh" }} />
           </Grid>
-          <Grid item container xs={8} style={{ padding: "5rem", placeItems: "center" }}>
+          <Grid item container xs={12} sm={10} md={9} style={{ padding: "5rem", placeItems: "center" }}>
             <Grid item style={{ fontSize: "1.75rem", textAlign: "left" }}>
               Hi! After spending over 6 years in the education industry in Australia and
               Japan, I
@@ -50,16 +50,19 @@ export default function About() {
 
           </Grid>
         </Grid>
+
         <Container>
           <h3>Skills</h3>
-          <Grid container rowSpacing={3} justifyContent="center">
-            {skills.map((skill, i) => (
-              <Link key={i} href={skill.href} underline="none" target="_blank">
-                <Box item key={i} md={1} style={{ fontSize: "2rem", color: "wheat", backgroundColor: "inherit", padding: "0.5rem" }}>
-                  <Icon icon={skill.icon} />
-                  <Typography>{skill.skill}</Typography></Box>
-              </Link>
-            ))}
+          <Grid container rowSpacing={3} justifyContent="center" style={{ marginTop: "1vh", padding: "2px", backgroundColor: "rgb(24, 24, 24)", borderRadius: "10px" }}>
+            {
+              skills.map((skill, i) => (
+                <Link key={i} href={skill.href} underline="none" target="_blank">
+                  <Box item key={i} md={1} style={{ fontSize: "2rem", color: "wheat", backgroundColor: "inherit", padding: "0.5rem" }}>
+                    <Icon icon={skill.icon} />
+                    <Typography>{skill.skill}</Typography></Box>
+                </Link>
+              ))
+            }
           </Grid>
 
         </Container>

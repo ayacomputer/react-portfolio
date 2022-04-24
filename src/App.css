@@ -76,13 +76,13 @@ main {
   margin: 5rem;
 }
 
-svg:hover,
-button:hover {
-  transform: scale(1.2);
+svg:hover {
+  transform: scale(1.5);
   transition: all 0.5s ease-in-out;
 }
 
-.project:hover {
+.project:hover,
+button:hover {
   transform: scale(1.2);
   transition: all 1s ease-in-out;
 }

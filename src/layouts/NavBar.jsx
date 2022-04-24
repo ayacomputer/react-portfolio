@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import { Container, Button, Toolbar, Typography, Box, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -54,13 +53,16 @@ export default function NavBar() {
         logo: {
             fontFamily: fontFamily,
             backgroundColor: "inherit",
-            fontSize: "3rem",
+            fontWeight: "bold",
+            fontSize: "2rem",
+            color: "wheat"
         },
         button: {
-            color: "inherit",
-            fontSize: "2rem",
-            fontWeight: "Bold",
+            fontSize: "1.50rem",
+            fontWeight: "bold",
             fontFamily: fontFamily,
+            color: "wheat",
+            borderRadius: "28px"
 
         }
     }
@@ -139,6 +141,7 @@ export default function NavBar() {
                                     onClick={handleCloseNavMenu}
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                     href={listItem.link}
+                                    style={styles.button}
                                 >
                                     {listItem.title}
                                 </Button>
