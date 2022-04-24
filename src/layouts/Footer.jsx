@@ -15,7 +15,7 @@ export default function Footer() {
       fontSize: "2rem"
     },
     container: {
-      marginTop: "20vh",
+      marginTop: "10vh",
       textAlign: "center",
     },
     link: {

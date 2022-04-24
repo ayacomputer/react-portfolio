@@ -32,24 +32,24 @@ export default function About() {
       <NavBar />
       <Container>
         <h3>ABOUT</h3>
-        <Grid container rowSpacing={3}>
-          <Grid item xs={3}>
-            <img src={Ayako} alt="A photo of me" />
+        <Grid container direction="row" rowSpacing={1}>
+          <Grid item xs={4}>
+            <img src={Ayako} alt="A photo of me" style={{ height: "50vh" }} />
           </Grid>
-          <Grid item xs={9}>
-            After spending over 6 years in the education industry in Australia and
-            Japan, I
-            discovered a passion for web development and decided to study through a bootcamp and
-            self-study. I love working with other developers to find the
-            best way to solve problems. I want to create user-friendly websites and applications that
-            help
-            people achieve their personal and business needs. My hobbies are cooking, fishing and
-            coding.
+          <Grid item container xs={8} style={{ padding: "5rem", placeItems: "center" }}>
+            <Grid item style={{ fontSize: "1.75rem", textAlign: "left" }}>
+              Hi!After spending over 6 years in the education industry in Australia and
+              Japan, I
+              discovered a passion for web development and decided to study through a bootcamp and
+              self-study. I love working with other developers to find the
+              best way to solve problems. I want to create user-friendly websites and applications that
+              help
+              people achieve their personal and business needs. My hobbies are cooking, fishing and
+              coding.
+            </Grid>
 
           </Grid>
         </Grid>
-
-
         <Container>
           <h3>Skills</h3>
           <Grid container rowSpacing={3} justifyContent="center">
@@ -60,8 +60,7 @@ export default function About() {
           </Grid>
 
         </Container>
-
-      </Container >
+      </Container>
     </>
 
   )

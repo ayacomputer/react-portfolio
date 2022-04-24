@@ -5,12 +5,11 @@ import { Container, Button, Toolbar } from '@mui/material';
 
 
 
-
 export default function NavBar() {
 
     const listItems = [
         {
-            title: "Home",
+            title: "AYAKO WOOLLAN",
             link: "/",
         },
         {
@@ -44,24 +43,27 @@ export default function NavBar() {
             textAlign: "center",
             fontFamily: fontFamily,
             backgroundColor: "inherit",
+        },
+        button: {
+            fontSize: "2rem",
+            fontWeight: "Bold",
+            fontFamily: fontFamily,
 
         }
     }
 
 
-
     return (
 
-        <AppBar position="static" style={styles.navBar} sx={{ position: "sticky", top: "0", zIndex: "100" }}>
+        <AppBar position="static" style={styles.navBar} sx={{ position: "sticky", top: "0", zIndex: "100" }} elevation='0'>
             <Container>
                 <Toolbar disableGutters>
                     {listItems.map((listItem, i) => (
-                        <Button key={i}>
+                        <Button key={i} style={styles.button} spacing={1}>
                             {listItem.href && (
-                                <a href={listItem.href} target={listItem.target}>{listItem.title}</a>
-                            )}
-                            {!listItem.href && (
-                                <Link to={listItem.link}>{listItem.title}</Link>
+                                <Link href={listItem.href} target={listItem.target} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
+                            )} {!listItem.href && (
+                                <Link to={listItem.link} style={{ textDecoration: 'none' }} variant="button">{listItem.title}</Link>
                             )}
                         </Button>
                     ))}
