@@ -8,6 +8,8 @@ import weatherDashboard from "../images/weatherDashboard.png";
 import codingQuiz from "../images/CodeQuiz.gif";
 import dayPlanner from "../images/dayPlanner.gif";
 import passwordGenerator from "../images/passwordGenerator.png";
+import jate from "../images/jate.png";
+import snAPI from "../images/socialNetworkAPI.png";
 
 const projects = [
     {
@@ -23,6 +25,13 @@ const projects = [
         image: eventFinder,
         gitHub: "https://github.com/ayacomputer/event-finder-ver2",
         deployed: "https://ayacomputer.github.io/event-finder-ver2"
+    },
+    {
+        name: "PWA: Text Editor",
+        description: `Express, IndexedDb, Webpack, babel-loader, style-loader, css-loader, code-mirror-themes...`,
+        image: jate,
+        gitHub: "https://github.com/ayacomputer/10-PWA-Text-Editor",
+        deployed: "https://ayacomputer-pwa-text-editor.herokuapp.com/"
     },
     {
         name: "MVC Blog",
@@ -78,6 +87,13 @@ const projects = [
         gitHub: "https://github.com/ayacomputer/03-Password-Generator",
         deployed: "https://ayacomputer.github.io/03-Password-Generator/"
     },
+    {
+        name: "Social Network API",
+        description: `Express, MongoDB, Mongoose, Moment.js`,
+        image: snAPI,
+        gitHub: "https://github.com/ayacomputer/18-Social-Network-API",
+    },
+
 ];
 
 
