@@ -46,6 +46,7 @@ export default function About() {
                   cursor
                   cursorStyle='|'
                   typeSpeed={50}
+                  deleteSpeed={70}
                   delaySpeed={1000}
                 />
               </p>

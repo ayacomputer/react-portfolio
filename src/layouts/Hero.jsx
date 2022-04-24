@@ -48,8 +48,8 @@ export default function Hero() {
                     loop={false}
                     cursor
                     cursorStyle='|'
-                    typeSpeed={70}
-                    deleteSpeed={50}
+                    typeSpeed={100}
+                    deleteSpeed={80}
                     delaySpeed={1000}
                 />
             </p>
