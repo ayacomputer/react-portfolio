@@ -51,7 +51,7 @@ export default function Projects() {
                 <h3>PROJECTS</h3>
                 <Grid container justify="center">
                     {projects.map((project, i) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3} key={i} >
+                        <Grid item xs={12} sm={6} md={4} xl={3} key={i} >
                             <Card style={styles.cardContainer} elevation="8" className="project">
                                 <CardActionArea href={project.gitHub} target="_blank">
                                     <CardMedia

@@ -56,8 +56,10 @@ hr {
   width: 80%;
 }
 
-.primary {
+.primary,
+.contact-form {
   color: var(--lightColor);
+  margin: "1 rem"
 }
 
 h3 {
@@ -80,6 +82,8 @@ svg:hover {
   transform: scale(1.5);
   transition: all 0.5s ease-in-out;
 }
+
+
 
 .project:hover,
 button:hover {

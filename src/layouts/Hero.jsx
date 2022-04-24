@@ -45,7 +45,7 @@ export default function Hero() {
             <p style={{ fontFamily: "Courier", fontWeight: "bold" }}>
                 <Typewriter
                     words={['Welcome to My Portfolio!', 'Check Out my Projects!', 'Feel Free to Contact Me!']}
-                    loop={0}
+                    loop={false}
                     cursor
                     cursorStyle='|'
                     typeSpeed={70}
