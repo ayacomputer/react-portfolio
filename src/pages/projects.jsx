@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { GitHub, Computer } from '@mui/icons-material';
 import NavBar from '../layouts/NavBar';
-import { fontWeight } from '@mui/system';
 
 const fontFamily = [
     'Nunito',
@@ -29,7 +28,7 @@ const styles = {
     wheat: {
         color: "wheat",
         border: "none",
-        fontWeight: "Bold",
+        fontWeight: "bold",
         fontFamily: fontFamily
     },
     green: {
@@ -53,7 +52,7 @@ export default function Projects() {
                 <Grid container justify="center">
                     {projects.map((project, i) => (
                         <Grid item xs={12} sm={6} md={4} key={i} >
-                            <Card style={styles.cardContainer} elevation="8">
+                            <Card style={styles.cardContainer} elevation="8" className="project">
                                 <CardActionArea href={project.gitHub} target="_blank">
                                     <CardMedia
                                         component="img"
