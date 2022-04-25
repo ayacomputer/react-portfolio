@@ -20,6 +20,8 @@
   
 <li><a href="#built-with">Built With</a></li>
 
+<li><a href="#features">Features</a></li>
+
 <li><a href="#license">License</a></>
   
 <li><a href="#contact">Contact</a></>
@@ -33,16 +35,30 @@
 
  ![ProductScreen Shot](./public/assets/home.png)
 
-This is my personal portfolio. 
-
-
-[Click Here to View The Deployed App](https://ayacomputer.github.io/react-portfolio/)
+This is my personal portfolio to showcase my projects.
+[Click Here to View The Deployed App.](https://ayacomputer.github.io/react-portfolio/)
 
 <p align = "right">(<a href="#top">back to top</a>)</>
 
  ## Built With
 * [React.js](https://reactjs.org/) 
 * [MUI](https://mui.com/) 
+* [npm packages](https://www.npmjs.com/) 
+
+<p align = "right"> (<a href="#top">back to top</a>)</>
+
+ ## Features
+* Responsive
+* Simple & easy to navigate
+
+### Desktop view
+![ProductScreen Shot](./public/assets/home.png)
+
+### Mobile view 
+![ProductScreen Shot](./public/assets/home.png)
+
+
+
 <p align = "right"> (<a href="#top">back to top</a>)</>
 
 ## License
