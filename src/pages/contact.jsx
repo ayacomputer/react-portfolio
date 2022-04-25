@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../layouts/NavBar'
-import { Grid, IconButton, Typography } from '@mui/material'
+import { Grid, IconButton, Typography, Link } from '@mui/material'
 import { Typewriter } from 'react-simple-typewriter'
 import { Icon } from '@iconify/react';
 
@@ -33,7 +33,7 @@ export default function Contact() {
   const links = [
     {
       name: 'Email Me',
-      href: 'mailto:ayako.woollan@gmail.com',
+      href: `mailto:ayako.woollan@gmail.com`,
       icon: "ci:mail"
     },
     {
@@ -69,9 +69,10 @@ export default function Contact() {
           alignItems="center" rowSpacing={2} style={{ marginTop: "1vh" }}>
           {links.map((link, i) => (
             <div item>
-              <IconButton key={i} color="secondary" href={link.href} size="medium" target="_blank" style={styles.icon}>
+              <Link component="a" href={link.href} style={styles.link}><IconButton key={i} color="secondary" size="medium" style={styles.icon}>
                 <Icon icon={link.icon} />
               </IconButton>
+              </Link>
               <Typography>{link.name}</Typography>
             </div>
 

@@ -49,7 +49,7 @@ export default function Footer() {
   return (
     <Container style={styles.container}>
       {links.map((link, i) => (
-        <IconButton key={i} color="secondary" href={link.href} size="medium" target="_blank" rel="noreferrer" style={styles.icon}>
+        <IconButton key={i} color="secondary" href={link.href} size="medium" rel="noreferrer" style={styles.icon}>
           {link.icon()}
         </IconButton>
       ))
