@@ -13,21 +13,21 @@ export default function NavBar() {
     const listItems = [
         {
             title: "Home",
-            link: "/",
+            link: "#/",
         },
         {
             title: "About",
-            link: "/about",
+            link: "#/about",
 
         },
         {
             title: "Projects",
-            link: "/projects",
+            link: "#/projects",
 
         },
         {
             title: "Contact",
-            link: "/contact",
+            link: "#/contact",
 
         },
         {
