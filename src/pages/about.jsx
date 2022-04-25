@@ -37,7 +37,7 @@ export default function About() {
           <Grid item xs={12} sm={2} md={3}>
             <img src={Ayako} alt="me" style={{ height: "50vh" }} />
           </Grid>
-          <Grid item container xs={12} sm={10} md={9} style={{ padding: "5rem", placeItems: "center" }}>
+          <Grid item container xs={12} sm={10} md={9} style={{ flexShrink: 1, padding: "5rem", placeItems: "center" }}>
             <Grid item style={{ fontSize: "1.75rem", textAlign: "left" }}>
               <p style={{ fontFamily: "Courier", fontWeight: "bold" }}>
                 <Typewriter

@@ -13,21 +13,21 @@ export default function NavBar() {
     const listItems = [
         {
             title: "Home",
-            link: "/React-Portfolio/",
+            link: "/",
         },
         {
             title: "About",
-            link: "/React-Portfolio/about",
+            link: "/about",
 
         },
         {
             title: "Projects",
-            link: "/React-Portfolio/projects",
+            link: "/projects",
 
         },
         {
             title: "Contact",
-            link: "/React-Portfolio/contact",
+            link: "/contact",
 
         },
         {
