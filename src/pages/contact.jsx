@@ -56,7 +56,7 @@ export default function Contact() {
         <h3>CONTACT</h3>
         <p style={{ fontFamily: "Courier", fontWeight: "bold" }} >
           <Typewriter
-            words={["Feel free to contact me.", "Let's get in Touch."]}
+            words={["Feel free to contact me!", "Let's get in Touch!"]}
             loop={0}
             cursor
             cursorStyle='|'
