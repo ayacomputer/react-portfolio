@@ -36,13 +36,13 @@ export default function Hero() {
 
     return (
         <header style={styles.header}>
-            <h1 style={{ fontFamily: "Nunito" }}>Ayako Woollan</h1>
+            <h1 style={{ fontFamily: "Nunito" }} xs={{ fontSize: "2rem" }}>Ayako Woollan</h1>
 
-            <h2 style={{ fontFamily: "Comforter" }}>Full Stack Developer</h2>
+            <h2 style={{ fontFamily: "Comforter" }} xs={{ fontSize: "1.75rem" }}>Full Stack Developer</h2>
 
 
             <hr></hr>
-            <p style={{ fontFamily: "Courier", fontWeight: "bold" }}>
+            <p style={{ fontFamily: "Courier", fontWeight: "bold" }} xs={{ fontSize: "1.75rem" }}>
                 <Typewriter
                     words={['Welcome to My Portfolio!', 'Check Out my Projects!', 'Feel Free to Contact Me!']}
                     loop={false}
@@ -55,7 +55,7 @@ export default function Hero() {
             </p>
 
 
-            <Link to="/about" style={{ textDecoration: "none" }}><Button variant="contained" size="large" endIcon={<ArrowCircleRightIcon />} style={styles.button}>Click Here</Button></Link>
+            <Link to="/about" style={{ textDecoration: "none" }}><Button variant="contained" endIcon={<ArrowCircleRightIcon />} style={styles.button}>Click Here</Button></Link>
 
 
         </header >
