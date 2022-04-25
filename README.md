@@ -51,11 +51,11 @@ This is my personal portfolio to showcase my projects.
 * Responsive
 * Simple & easy to navigate
 
-### Desktop view
+<!-- ### Desktop view
 ![ProductScreen Shot](./public/assets/pc.png)
 
 ### Mobile view 
-![ProductScreen Shot](./public/assets/mobile.png)
+![ProductScreen Shot](./public/assets/mobile.png) -->
 
 
 
