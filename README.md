@@ -52,10 +52,10 @@ This is my personal portfolio to showcase my projects.
 * Simple & easy to navigate
 
 ### Desktop view
-![ProductScreen Shot](./public/assets/home.png)
+![ProductScreen Shot](./public/assets/pc.png)
 
 ### Mobile view 
-![ProductScreen Shot](./public/assets/home.png)
+![ProductScreen Shot](./public/assets/mobile.png)
 
 
 
