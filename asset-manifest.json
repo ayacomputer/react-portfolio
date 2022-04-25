@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.25f62f4b.css",
-    "main.js": "/React-Portfolio/static/js/main.f014408a.js",
-    "static/media/portfolio.gif": "/React-Portfolio/static/media/portfolio.2761fcdea7d089b67808.gif",
-    "static/media/dayPlanner.gif": "/React-Portfolio/static/media/dayPlanner.b00633dbe8323d1a91f3.gif",
-    "static/media/CodeQuiz.gif": "/React-Portfolio/static/media/CodeQuiz.95cf679b5e502ca3763e.gif",
-    "static/media/readme.gif": "/React-Portfolio/static/media/readme.c02ede110e92ac9d2566.gif",
-    "static/media/event-finder.png": "/React-Portfolio/static/media/event-finder.5f9cd663d008edb0b5fe.png",
-    "static/media/mvcBlog.png": "/React-Portfolio/static/media/mvcBlog.9a7159323f3d946ae6df.png",
-    "static/media/paws.png": "/React-Portfolio/static/media/paws.8ddf8d93b882c9783f2c.png",
-    "static/media/employeeTracker.png": "/React-Portfolio/static/media/employeeTracker.1b6eeba76b7808fa9e6b.png",
-    "static/media/socialNetworkAPI.png": "/React-Portfolio/static/media/socialNetworkAPI.a3cb19b05a330a305ef0.png",
-    "static/media/weatherDashboard.png": "/React-Portfolio/static/media/weatherDashboard.33cff8806b2985a64906.png",
-    "static/media/jate.png": "/React-Portfolio/static/media/jate.16828a8b10be628f7008.png",
-    "static/media/logo.png": "/React-Portfolio/static/media/logo.0471f9862f8f96334750.png",
-    "static/media/passwordGenerator.png": "/React-Portfolio/static/media/passwordGenerator.c0de8ef9a9d64647454d.png",
-    "static/media/noteTaker.png": "/React-Portfolio/static/media/noteTaker.f7a03f471a550db8c270.png",
-    "index.html": "/React-Portfolio/index.html",
-    "main.25f62f4b.css.map": "/React-Portfolio/static/css/main.25f62f4b.css.map",
-    "main.f014408a.js.map": "/React-Portfolio/static/js/main.f014408a.js.map"
+    "main.css": "/react-portfolio/static/css/main.25f62f4b.css",
+    "main.js": "/react-portfolio/static/js/main.3fa5abd3.js",
+    "static/media/portfolio.gif": "/react-portfolio/static/media/portfolio.2761fcdea7d089b67808.gif",
+    "static/media/dayPlanner.gif": "/react-portfolio/static/media/dayPlanner.b00633dbe8323d1a91f3.gif",
+    "static/media/CodeQuiz.gif": "/react-portfolio/static/media/CodeQuiz.95cf679b5e502ca3763e.gif",
+    "static/media/readme.gif": "/react-portfolio/static/media/readme.c02ede110e92ac9d2566.gif",
+    "static/media/event-finder.png": "/react-portfolio/static/media/event-finder.5f9cd663d008edb0b5fe.png",
+    "static/media/mvcBlog.png": "/react-portfolio/static/media/mvcBlog.9a7159323f3d946ae6df.png",
+    "static/media/paws.png": "/react-portfolio/static/media/paws.8ddf8d93b882c9783f2c.png",
+    "static/media/employeeTracker.png": "/react-portfolio/static/media/employeeTracker.1b6eeba76b7808fa9e6b.png",
+    "static/media/socialNetworkAPI.png": "/react-portfolio/static/media/socialNetworkAPI.a3cb19b05a330a305ef0.png",
+    "static/media/weatherDashboard.png": "/react-portfolio/static/media/weatherDashboard.33cff8806b2985a64906.png",
+    "static/media/jate.png": "/react-portfolio/static/media/jate.16828a8b10be628f7008.png",
+    "static/media/logo.png": "/react-portfolio/static/media/logo.0471f9862f8f96334750.png",
+    "static/media/passwordGenerator.png": "/react-portfolio/static/media/passwordGenerator.c0de8ef9a9d64647454d.png",
+    "static/media/noteTaker.png": "/react-portfolio/static/media/noteTaker.f7a03f471a550db8c270.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.25f62f4b.css.map": "/react-portfolio/static/css/main.25f62f4b.css.map",
+    "main.3fa5abd3.js.map": "/react-portfolio/static/js/main.3fa5abd3.js.map"
   },
   "entrypoints": [
     "static/css/main.25f62f4b.css",
-    "static/js/main.f014408a.js"
+    "static/js/main.3fa5abd3.js"
   ]
 }
