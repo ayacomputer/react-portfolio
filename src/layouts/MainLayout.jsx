@@ -7,12 +7,8 @@ import '../App.css'
 export default function MainLayout(props) {
   return (
     <main>
-
-
-
       {props.children}
       <Footer></Footer>
-
     </main>
   )
 }

@@ -6,8 +6,6 @@ import Hero from "../layouts/Hero";
 
 export default function Index() {
     return (
-
         <Hero />
-
     );
 }
