@@ -1,6 +1,6 @@
 import React from 'react'
 import AppBar from '@mui/material/AppBar';
-import { Container, Button, Toolbar, Typography, Box, IconButton } from '@mui/material';
+import { Container, Button, Toolbar, Typography, Box, IconButton, Link, Paper } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
@@ -64,9 +64,17 @@ export default function NavBar() {
             color: "wheat",
             borderRadius: "28px"
 
+        },
+        link: {
+            textDecoration: "none",
+            fontFamily: fontFamily,
+            color: "rgb(32, 33, 36)",
+            fontWeight: 'bold'
+
         }
     }
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const open = Boolean(anchorElNav);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -96,6 +104,7 @@ export default function NavBar() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 onClick={handleOpenNavMenu}
+                                aria-haspopup="true"
                                 color="inherit"
                             >
                                 <MenuIcon />
@@ -112,16 +121,21 @@ export default function NavBar() {
                                     vertical: 'top',
                                     horizontal: 'left',
                                 }}
-                                open={Boolean(anchorElNav)}
+                                open={open}
                                 onClose={handleCloseNavMenu}
+                                MenuListProps={{
+                                    'aria-labelledby': 'basic-button',
+                                }}
                                 sx={{
-                                    display: { xs: 'block', md: 'none' },
+                                    display: { xs: 'block', sm: 'block', md: 'none' },
                                 }}
                             >
                                 {listItems.map((listItem, i) => (
-                                    <MenuItem key={i} onClick={handleCloseNavMenu} style={styles.button}>
-                                        <Typography textAlign="center" style={styles.button} href={listItem.link}>{listItem.title}</Typography>
-                                    </MenuItem>
+                                    <Paper elevation={0}>
+                                        <MenuItem key={i} onClick={handleCloseNavMenu}>
+                                            <Typography textAlign="center"><Link href={listItem.link} style={styles.link}>{listItem.title}</Link></Typography>
+                                        </MenuItem>
+                                    </Paper>
                                 ))}
                             </Menu>
                         </Box>
