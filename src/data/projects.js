@@ -7,7 +7,7 @@ import employeeTracker from "../images/employeeTracker.png";
 import weatherDashboard from "../images/weatherDashboard.png";
 import codingQuiz from "../images/CodeQuiz.gif";
 import dayPlanner from "../images/dayPlanner.gif";
-import passwordGenerator from "../images/passwordGenerator.png";
+import passwordGenerator from "../images/PG.png";
 import jate from "../images/jate.png";
 import snAPI from "../images/socialNetworkAPI.png";
 import portfolio from "../images/portfolio.gif"
