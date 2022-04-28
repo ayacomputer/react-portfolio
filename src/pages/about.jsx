@@ -33,9 +33,9 @@ export default function About() {
       <NavBar />
       <Container>
         <h3>ABOUT</h3>
-        <Grid container direction="row" rowSpacing={{ xs: 1, md: 2 }} style={{ backgroundColor: "rgb(24, 24, 24)", borderRadius: "10px" }}>
+        <Grid container direction="row" rowSpacing={{ xs: 2, md: 2 }} style={{ backgroundColor: "rgb(24, 24, 24)", borderRadius: "10px" }}>
           <Grid item xs={12} sm={2} md={3}>
-            <img src={Ayako} alt="me" style={{ height: "10em" }} />
+            <img src={Ayako} alt="me" style={{ height: "50vh" }} />
           </Grid>
           <Grid item container xs={12} sm={10} md={9} style={{ flexShrink: 1, padding: "5rem", placeItems: "center" }}>
             <Grid item style={{ fontSize: "1.75rem", textAlign: "left" }}>
