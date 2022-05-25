@@ -11,12 +11,12 @@ import passwordGenerator from "../images/PG.png";
 import jate from "../images/jate.png";
 import snAPI from "../images/socialNetworkAPI.png";
 import portfolio from "../images/portfolio.gif";
-import cookHelper from "../images/coo-helper.png";
+import cookHelper from "../images/cook-helper.png";
 
 const projects = [
     {
         name: "Cook Helper",
-        description: ` MongoDB, Express.js, React.js, Node.js, GraphQL, JWT, mui`,
+        description: ` MongoDB, Express.js, React.js, Node.js, GraphQL, JWT, Apollo Server, mui, Cloudinary`,
         image: cookHelper,
         gitHub: "https://github.com/ayacomputer/cook-helper",
         deployed: "https://ayacomputer-cook-helper.herokuapp.com/"
