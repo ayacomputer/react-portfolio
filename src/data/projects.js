@@ -10,9 +10,17 @@ import dayPlanner from "../images/dayPlanner.gif";
 import passwordGenerator from "../images/PG.png";
 import jate from "../images/jate.png";
 import snAPI from "../images/socialNetworkAPI.png";
-import portfolio from "../images/portfolio.gif"
+import portfolio from "../images/portfolio.gif";
+import cookHelper from "../images/coo-helper.png";
 
 const projects = [
+    {
+        name: "Cook Helper",
+        description: ` MongoDB, Express.js, React.js, Node.js, GraphQL, JWT, mui`,
+        image: cookHelper,
+        gitHub: "https://github.com/ayacomputer/cook-helper",
+        deployed: "https://ayacomputer-cook-helper.herokuapp.com/"
+    },
     {
         name: "Pet Advocate Welfare System",
         description: `Node.js, Express.js, MySQL, Sequelize, Handlebars, dotenv, body-parser, nodemailer, bcrypt, express-session, Bootstrap`,
