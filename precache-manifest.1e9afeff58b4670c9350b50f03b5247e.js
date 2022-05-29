@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "512c282c06c29943373c",
+    "revision": "004ca0b496867181a025",
     "url": "/react-portfolio/static/css/main.5db1ad8d.chunk.css"
   },
   {
-    "revision": "512c282c06c29943373c",
-    "url": "/react-portfolio/static/js/main.512c282c.chunk.js"
+    "revision": "004ca0b496867181a025",
+    "url": "/react-portfolio/static/js/main.004ca0b4.chunk.js"
   },
   {
     "revision": "1b7902a9c385e0d99c81",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/media/cook-helper.d91847b2.png"
   },
   {
-    "revision": "ba5021c3f87cebc55a855f36d8d665ae",
+    "revision": "bd560a9503ceb7218e3f448d995ffa2f",
     "url": "/react-portfolio/index.html"
   }
 ];
