@@ -37,7 +37,7 @@ export default function Footer() {
       icon: () => <GitHubIcon />
     },
     {
-      href: 'https://www.linkedin.com/in/ayako-w-65454071',
+      href: 'https://www.linkedin.com/in/ayakowoollan',
       icon: () => <LinkedInIcon />
     },
     {

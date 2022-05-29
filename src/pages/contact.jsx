@@ -43,7 +43,7 @@ export default function Contact() {
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/ayako-w-65454071',
+      href: 'https://www.linkedin.com/in/ayakowoollan',
       icon: "bi:linkedin"
     }
   ]
