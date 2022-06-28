@@ -75,7 +75,7 @@ export default function Projects() {
 
                                     <Button variant="outlined" style={styles.wheat} startIcon={<GitHub />} href={project.gitHub} target="_blank" >Github</Button>
                                     {project.deployed && <Button variant="outlined" style={styles.wheat} startIcon={<Computer />} href={project.deployed} target="_blank">Deployed App</Button>}
-
+                                    {project.video && <Button variant="outlined" style={styles.wheat} startIcon={<Computer />} href={project.video} target="_blank">Video</Button>}
 
                                 </CardActions>
                             </Card>

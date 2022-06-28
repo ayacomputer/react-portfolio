@@ -68,12 +68,14 @@ const projects = [
         description: `Node.js, npm Inquirer, Javascript`,
         image: readmeGenerator,
         gitHub: "https://github.com/ayacomputer/09-Readme-Generator",
+        video: "https://drive.google.com/file/d/19MvbvMPHOoy8ybhV3NNcXzdzNqQvEuDw/view?usp=sharing"
     },
     {
         name: "Employee Tracker",
         description: `Node.js, mySQL2, Express.js, dotenv`,
         image: employeeTracker,
         gitHub: "https://github.com/ayacomputer/12-Employee-Tracker",
+        video: "https://drive.google.com/file/d/1nksW-2mFCZvWos0xTo0kthkxhypIUfgC/view"
     },
     {
         name: "Weather Dashboard",
@@ -108,6 +110,8 @@ const projects = [
         description: `Express, MongoDB, Mongoose, Moment.js`,
         image: snAPI,
         gitHub: "https://github.com/ayacomputer/18-Social-Network-API",
+        video: "https://drive.google.com/drive/folders/13arWIjL-Ys21q2lkj1pWe0HJXScb79yP?usp=sharing"
+
     },
 
 
