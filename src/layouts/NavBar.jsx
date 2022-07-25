@@ -32,7 +32,7 @@ export default function NavBar() {
         },
         {
             title: "Resume",
-            link: 'https://drive.google.com/file/d/1El5X41dF7e3KdDcOrVjd9ruv2tsd2INK/view?usp=sharing',
+            link: 'https://drive.google.com/file/d/1z_v0zqGTxdr_GOUEhFZbrEJdZNwKoUXP/view?usp=sharing',
         },
 
     ];
